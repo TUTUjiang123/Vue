@@ -5,9 +5,13 @@
     <title>Title</title>
 </head>
 <body>
-
+<!--动态绑定-->
 <div id="app">
-
+    <img v-bind:src="imgURL">
+    <a v-bind:href="Href">百度一下</a>
+    <!--语法糖写法-->
+    <img :src="imgURL">
+    <a :href="Href">百度一下</a>
 </div>
 
 <script src="../js/vue.js"></script>
@@ -17,6 +21,8 @@
         el: '#app',
         data: {
             message: '',
+            imgURL: 'https://img2.woyaogexing.com/2020/04/25/a11d3f54f7644b6d85d8d922dee28bc7!1242x9999.jpeg',
+            Href: 'https://www.baidu.com'
         }
     })
 </script>
