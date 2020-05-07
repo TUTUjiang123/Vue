@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+
+<script src="../js/vue.js"></script>
+<script>
+    //注意一：一旦给const修饰的标识符被赋值之后，不能修改
+    // const name = 'why';
+    // name = 'tu';
+
+    //注意二：在使用const定义标识符，必须进行赋值
+    // const name;
+
+    //注意三：常量的含义是指向的对象不能修改，但hi可以改变对象内部的属性
+    const obj = {
+        name: 'tu',
+        age: 18,
+        height: 1.63
+    }
+    // obj {}
+
+    obj.name = 'tu';
+    obj.age = 18;
+    obj.height = 165;
+</script>
+</body>
+</html>
